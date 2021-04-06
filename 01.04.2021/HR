@@ -1,0 +1,30 @@
+   void getRoomWithShower() {
+        Room[] rooms = this.freeRooms;
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].shower && rooms[i].roomNumber != 0) {
+                System.out.println("Комната с душем" + rooms[i].roomNumber);
+
+            }
+        }
+        System.out.println("~Список комнат с туалетом~");
+    }
+
+
+    void getRoomWithToilei(){
+        Room [] rooms = this.freeRooms;
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].toilet && rooms[i].roomNumber !=0){
+                System.out.println("Комната с туалетом"+rooms[i].roomNumber);
+            }
+        }
+        System.out.println("~Список комнат с wifi~");
+    }
+
+    void getRoomWithWiFi(){
+        Room[] rooms = this.freeRooms;
+        for (int i = 0; i < rooms.length; i++) {
+            if (rooms[i].wife && rooms[i].roomNumber!=0);
+            System.out.println("Комната с Wifi"+rooms[i].roomNumber);
+        }
+    }
+}
